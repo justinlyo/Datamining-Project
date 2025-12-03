@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "spotify-clustering"
+version = "0.1.0"
+description = "Clustering Spotify tracks using audio features"
+
+# Python version requirement
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+
+
+[[tool.poetry.packages]]
+include = "spotify_clustering"
+from = "src"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

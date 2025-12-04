@@ -6,11 +6,19 @@ description = "Clustering Spotify tracks using audio features"
 # Python version requirement
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
+pandas = "^2.3.3"
+scikit-learn = "^1.7.2"
+matplotlib = "^3.10.7"
+seaborn = "^0.13.2"
 
 
 [[tool.poetry.packages]]
 include = "spotify_clustering"
 from = "src"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^7.1.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
